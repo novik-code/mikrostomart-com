@@ -1,0 +1,113 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
+---
+
+<BaseLayout
+  title="About — Dr Marcin Nowosielski, M.Sc. RWTH Aachen | Dentist in Poland"
+  description="Dr Marcin Nowosielski, M.Sc. RWTH Aachen — English-speaking dentist and implantologist in Opole, Poland. German university degree, premium Mikrostomart clinic, international patients."
+>
+  <div class="container content">
+    <nav class="breadcrumbs"><a href="/">Home</a> · <span>About us</span></nav>
+
+    <header>
+      <p class="eyebrow">Your treating dentist</p>
+      <h1>Dr Marcin Nowosielski, M.Sc. RWTH Aachen</h1>
+      <p class="lead">
+        Dentist and implantologist with a <strong>German university degree (M.Sc. RWTH Aachen)</strong>
+        who speaks <strong>fluent English and German</strong>. At the premium
+        <strong>Mikrostomart</strong> clinic in Opole he treats patients from the UK, Ireland,
+        Germany and beyond — Western quality at Polish prices.
+      </p>
+    </header>
+
+    <section>
+      <h2>Why this matters</h2>
+      <p>
+        The most common reason patients hesitate over dental tourism is the
+        <strong>language barrier</strong>. Here it disappears: Dr Nowosielski studied in Germany
+        (RWTH Aachen) and discusses your diagnosis, options, risks and costs
+        <strong>personally, in English</strong> — no interpreter, no misunderstandings.
+      </p>
+    </section>
+
+    <section>
+      <h2>Qualifications</h2>
+      <ul>
+        <li><strong>2007–2013</strong> — Dental studies, Medical University of Wrocław</li>
+        <li><strong>2013</strong> — Licensed dentist, member of the Opole Medical Chamber</li>
+        <li><strong>2015</strong> — Member of the Polish Endodontic Society (PTE) and ESE</li>
+        <li><strong>2018–2021</strong> — <strong>Master of Science in Lasers in Dentistry, RWTH Aachen</strong> (with distinction) — one of few in Poland with this degree</li>
+        <li><strong>2020+</strong> — Member of the Polish Implantology Society (PSI)</li>
+        <li><strong>2024</strong> — Author of the professional book <em>„Własny gabinet"</em> (Czelej)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Areas of focus</h2>
+      <ul>
+        <li><strong>Implantology</strong> — single implants, All-on-4/6, immediate placement, bone grafting, sinus lift (Straumann, Nobel Biocare)</li>
+        <li><strong>Microscopic endodontics</strong> — root canal treatment under the operating microscope (ZEISS)</li>
+        <li><strong>Prosthetics</strong> — crowns, bridges, fixed restoration on implants (zirconia)</li>
+        <li><strong>Cosmetic dentistry</strong> — veneers, whitening, smile design</li>
+        <li><strong>Laser dentistry</strong> — Er:YAG / Nd:YAG (Fotona)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>The Mikrostomart clinic</h2>
+      <p>Premium dental clinic in Opole (ul. Centralna 33a). Equipment:</p>
+      <ul>
+        <li>ZEISS operating microscope</li>
+        <li>CBCT (3D X-ray)</li>
+        <li>Intraoral scanner (digital impressions)</li>
+        <li>Fotona LightWalker laser (Er:YAG + Nd:YAG)</li>
+        <li>Computer-controlled anaesthesia (The Wand) — pain-free</li>
+        <li>Straumann & Nobel Biocare implant systems</li>
+        <li>Class B sterilisation</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Treatment philosophy</h2>
+      <blockquote>
+        "Precision is the key to long-lasting results. Microscope, CBCT and digital planning are
+        standard here, not extras. The patient has the right to understand exactly what happens to
+        their teeth, what the alternatives are and what the risks are — and to hear it in their own
+        language."
+      </blockquote>
+    </section>
+
+    <section>
+      <h2>For international patients</h2>
+      <p>
+        We regularly care for patients from the UK, Ireland, Germany, Austria and Switzerland.
+        Languages: <strong>English, German, Polish</strong>. Opole is ~1 hour from Wrocław and
+        Katowice airports. <a href="/dental-tourism-poland">How it works →</a>
+      </p>
+    </section>
+
+    <aside class="cta-inline">
+      <h2>Free enquiry — directly with the dentist</h2>
+      <p>
+        Send us your X-rays or a description of your case. You'll get a free, no-obligation
+        assessment and a cost estimate — personally, in English.
+      </p>
+      <a class="btn-primary" href={`mailto:${site.clinic.email}`}>Send enquiry →</a>
+    </aside>
+  </div>
+</BaseLayout>
+
+<style>
+  .content { max-width: 56rem; }
+  .breadcrumbs { font-size: 0.875rem; color: var(--color-muted); margin-bottom: 1.5rem; }
+  .breadcrumbs a { text-decoration: none; }
+  .content header { margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--color-border); }
+  .lead { font-size: 1.1875rem; color: var(--color-muted); }
+  .eyebrow { text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.75rem; color: var(--color-accent-dark); margin: 0 0 0.5rem; font-weight: 700; }
+  section { margin: 3rem 0; }
+  blockquote { margin: 1.5rem 0; padding: 1.5rem 2rem; background: var(--color-card); border-left: 4px solid var(--color-accent); font-style: italic; font-size: 1.125rem; color: var(--color-primary); }
+  .cta-inline { background: var(--color-primary); color: white; padding: 2.5rem 2rem; border-radius: 8px; margin-top: 4rem; }
+  .cta-inline h2 { color: var(--color-accent); margin-top: 0; }
+  .cta-inline p { color: #d7e8e3; }
+</style>

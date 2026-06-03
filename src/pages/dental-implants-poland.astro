@@ -1,0 +1,114 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
+---
+
+<BaseLayout
+  title="Dental Implants in Poland — Cost, Quality, Process | Mikrostomart Opole"
+  description="Dental implants in Poland (Opole) — Straumann & Nobel Biocare, up to 60% cheaper than the UK. English-speaking dentist with M.Sc. RWTH Aachen. Process, costs, guarantee."
+>
+  <div class="container content">
+    <nav class="breadcrumbs"><a href="/">Home</a> · <span>Dental Implants Poland</span></nav>
+
+    <header>
+      <p class="eyebrow">Implantology · Poland · Opole</p>
+      <h1>Dental implants in Poland — Western quality, fair prices</h1>
+      <p class="lead">
+        A dental implant replaces the tooth root with a titanium screw, later fitted with a crown.
+        At <strong>Mikrostomart</strong> in Opole you receive implants from
+        <strong>Straumann and Nobel Biocare</strong> — the same premium systems used in the UK,
+        but <strong>up to 60% cheaper</strong>. You are treated by an English-speaking dentist with
+        a degree from RWTH Aachen, Germany.
+      </p>
+    </header>
+
+    <section>
+      <h2>Why implants in Poland — and why with us</h2>
+      <ul>
+        <li><strong>Identical materials</strong> — Straumann, Nobel Biocare (global leaders)</li>
+        <li><strong>Modern technology</strong> — in-house CBCT (3D X-ray), digital scanner, guided implantation</li>
+        <li><strong>English-speaking dentist</strong> — Dr Nowosielski, M.Sc. RWTH Aachen, no interpreter needed</li>
+        <li><strong>Easy to reach</strong> — via Wrocław or Katowice airports (~1 hour to Opole)</li>
+        <li><strong>Up to 60% savings</strong> vs. UK / Western Europe prices</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>The implant process</h2>
+      <ol>
+        <li><strong>Remote first contact</strong> — you send X-rays/questions, we give an assessment and a cost estimate (in English).</li>
+        <li><strong>Visit 1: Diagnostics & placement</strong> — CBCT, planning, placing the implant. Often in one appointment.</li>
+        <li><strong>Healing (osseointegration)</strong> — 3-6 months; during this time you are at home.</li>
+        <li><strong>Visit 2: Crown</strong> — digital scan and fitting of the final crown.</li>
+      </ol>
+      <p>So usually only <strong>two trips</strong> to Opole are needed. We agree the exact plan individually.</p>
+    </section>
+
+    <section>
+      <h2>Which implants we use</h2>
+      <p>Only <strong>premium systems</strong> with decades of documentation and a lifetime manufacturer guarantee:</p>
+      <ul>
+        <li><strong>Straumann</strong> (Switzerland) — SLActive surface, fast healing</li>
+        <li><strong>Nobel Biocare</strong> (USA/Sweden) — also for All-on-4</li>
+      </ul>
+      <p>You receive an <strong>implant passport</strong> — important for aftercare and records at home.</p>
+    </section>
+
+    <section>
+      <h2>Bone grafting & sinus lift — if needed</h2>
+      <p>
+        With insufficient bone (after long-term tooth loss), a <strong>bone graft</strong> or
+        <strong>sinus lift</strong> (upper back jaw) is required. We perform both with premium
+        materials (Bio-Oss). The CBCT shows whether it's necessary.
+      </p>
+    </section>
+
+    <section>
+      <h2>How much does an implant cost in Poland</h2>
+      <table>
+        <thead><tr><th>Service</th><th>Poland (Mikrostomart)</th><th>UK (approx.)</th></tr></thead>
+        <tbody>
+          <tr><td>Implant + crown (zirconia)</td><td>from €1,300-1,900</td><td>£2,000-3,000</td></tr>
+          <tr><td>Sinus lift</td><td>from €350-700</td><td>£700-1,400</td></tr>
+          <tr><td>All-on-4 (one jaw)</td><td>from €6,000-9,000</td><td>£12,000-20,000</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:0.875rem;color:var(--color-muted)">Indicative; binding quote after CBCT. <a href="/dental-treatment-cost-poland">More on costs →</a></p>
+    </section>
+
+    <section>
+      <h2>Guarantee and aftercare</h2>
+      <p>
+        Implants carry the <strong>manufacturer guarantee</strong> (Straumann/Nobel) plus our
+        treatment guarantee. Routine aftercare (check-ups, professional cleaning) can be done by
+        your dentist at home; for any questions we are reachable in English.
+      </p>
+    </section>
+
+    <section class="cta-box">
+      <h2>Free implant enquiry</h2>
+      <p>Send us your X-rays or a short description. You'll get a free, no-obligation assessment and a cost estimate — in English.</p>
+      <p>
+        <a class="btn-primary" href={`mailto:${site.clinic.email}`}>Send enquiry →</a>
+        &nbsp; <a class="btn-outline" href={site.clinic.phoneHref}>Call: {site.clinic.phone}</a>
+      </p>
+    </section>
+
+    <hr />
+    <p class="disclaimer-inline"><strong>Disclaimer:</strong> Information only. Suitability and plan depend on individual diagnostics (CBCT). Results are individual.</p>
+  </div>
+</BaseLayout>
+
+<style>
+  .content { max-width: 56rem; }
+  .breadcrumbs { font-size: 0.875rem; color: var(--color-muted); margin-bottom: 1.5rem; }
+  .breadcrumbs a { text-decoration: none; }
+  header { margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--color-border); }
+  .eyebrow { text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.75rem; color: var(--color-accent-dark); font-weight: 700; margin: 0 0 0.5rem; }
+  .lead { font-size: 1.125rem; color: var(--color-muted); }
+  section { margin-bottom: 2.5rem; }
+  .cta-box { background: var(--color-card); padding: 2rem; border-radius: 8px; border-left: 4px solid var(--color-accent); margin: 3rem 0 2rem; }
+  .cta-box h2 { margin-top: 0; }
+  .disclaimer-inline { font-size: 0.8125rem; color: var(--color-muted); border-left: 3px solid var(--color-border); padding-left: 1rem; margin-top: 2rem; }
+  hr { border: none; border-top: 1px solid var(--color-border); margin: 2rem 0; }
+</style>

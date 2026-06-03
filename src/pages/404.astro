@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Page not found" description="404 — This page does not exist on mikrostomart.com" noindex={true}>
+  <div class="container error-page">
+    <p class="big-number">404</p>
+    <h1>Page not found</h1>
+    <p class="lead">The address you entered doesn't lead to a page. Try one of these:</p>
+    <ul class="nav-suggestions">
+      <li><a href="/">Home</a></li>
+      <li><a href="/dental-implants-poland">Dental Implants Poland</a></li>
+      <li><a href="/all-on-4-poland">All-on-4 Poland</a></li>
+      <li><a href="/dental-treatment-cost-poland">Costs & Prices</a></li>
+      <li><a href="/dental-tourism-poland">How it works</a></li>
+      <li><a href="/blog">Blog</a></li>
+    </ul>
+    <p>Free quote → <a href="mailto:gabinet@mikrostomart.pl">gabinet@mikrostomart.pl</a></p>
+  </div>
+</BaseLayout>
+
+<style>
+  .error-page { max-width: 36rem; text-align: center; padding: 4rem 1.5rem; }
+  .big-number { font-family: var(--font-display); font-size: 8rem; color: var(--color-accent); line-height: 1; margin: 0; opacity: 0.6; font-weight: 800; }
+  .error-page h1 { font-size: 2rem; margin-top: 0; }
+  .lead { font-size: 1.125rem; color: var(--color-muted); }
+  .nav-suggestions { list-style: none; padding: 0; display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin: 2rem 0; }
+  .nav-suggestions a { font-weight: 600; }
+</style>

@@ -1,0 +1,112 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
+---
+
+<BaseLayout
+  title="All-on-4 in Poland — fixed teeth in a day | Cost & Process"
+  description="All-on-4 in Poland (Opole) — fixed full-arch teeth on 4 implants, often the same day, no toothless period. Up to 60% cheaper than the UK. English-speaking dentist."
+>
+  <div class="container content">
+    <nav class="breadcrumbs"><a href="/">Home</a> · <span>All-on-4 Poland</span></nav>
+
+    <header>
+      <p class="eyebrow">Full-arch restoration · Poland</p>
+      <h1>All-on-4 in Poland — fixed teeth, no toothless period</h1>
+      <p class="lead">
+        <strong>All-on-4</strong> is a fixed bridge on just 4 implants per jaw — the solution for
+        full tooth loss or many non-restorable teeth. Thanks to <strong>immediate loading</strong>,
+        you get fixed temporary teeth often <strong>the same day</strong>. In Opole at Polish prices,
+        with English-speaking care.
+      </p>
+    </header>
+
+    <section>
+      <h2>Who is All-on-4 for</h2>
+      <ul>
+        <li>For <strong>full tooth loss</strong> (entire jaw)</li>
+        <li>For <strong>many non-restorable teeth</strong></li>
+        <li>As an alternative to a <strong>removable denture</strong> (no wobbling, firm hold)</li>
+        <li>When a <strong>toothless period must be avoided</strong></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>All-on-4 vs. All-on-6</h2>
+      <p>
+        <strong>All-on-4</strong> uses 4 implants (2 straight at the front, 2 angled at the back —
+        often avoiding bone grafting). <strong>All-on-6</strong> uses 6 implants for extra stability,
+        especially in the upper jaw with softer bone. The CBCT shows which is appropriate.
+      </p>
+    </section>
+
+    <section>
+      <h2>The process — usually two trips</h2>
+      <ol>
+        <li><strong>Remote assessment</strong> — send X-rays, get an estimate and plan in English.</li>
+        <li><strong>Trip 1:</strong> CBCT, any extractions, implant placement, <strong>fixed temporary bridge (immediate loading)</strong> — often the same day.</li>
+        <li><strong>Healing</strong> 3-6 months (at home, with a fixed temporary bridge).</li>
+        <li><strong>Trip 2:</strong> final bridge — <strong>full-contour zirconia, screw-retained</strong>.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>The final restoration: screw-retained zirconia</h2>
+      <p>
+        As the definitive solution we use <strong>monolithic zirconia, screw-retained</strong> on
+        the implants. Benefits: high strength, natural aesthetics, and — because it's screwed rather
+        than cemented — <strong>removable for maintenance</strong>.
+      </p>
+    </section>
+
+    <section>
+      <h2>How much does All-on-4 cost in Poland</h2>
+      <table>
+        <thead><tr><th>Service</th><th>Poland (Mikrostomart)</th><th>UK (approx.)</th></tr></thead>
+        <tbody>
+          <tr><td>All-on-4, one jaw (complete)</td><td>from €6,000-9,000</td><td>£12,000-20,000</td></tr>
+          <tr><td>All-on-6, one jaw</td><td>from €8,000-12,000</td><td>£15,000-25,000</td></tr>
+          <tr><td>Both jaws</td><td>from €12,000-18,000</td><td>£24,000-40,000</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:0.875rem;color:var(--color-muted)">Indicative; binding quote after CBCT. <a href="/dental-treatment-cost-poland">Cost overview →</a></p>
+    </section>
+
+    <section>
+      <h2>Benefits of All-on-4</h2>
+      <ul>
+        <li>✅ <strong>Fixed teeth</strong>, no wobbling like dentures</li>
+        <li>✅ <strong>No toothless period</strong> (immediate loading)</li>
+        <li>✅ <strong>Only 4 implants</strong> — often without extensive bone grafting</li>
+        <li>✅ <strong>Natural aesthetics</strong>, matched to your face</li>
+        <li>✅ Restored <strong>chewing function</strong></li>
+      </ul>
+    </section>
+
+    <section class="cta-box">
+      <h2>All-on-4 enquiry — free & in English</h2>
+      <p>Send us your X-rays. You'll get an assessment of whether All-on-4 or All-on-6 is suitable, with a cost estimate.</p>
+      <p>
+        <a class="btn-primary" href={`mailto:${site.clinic.email}`}>Send enquiry →</a>
+        &nbsp; <a class="btn-outline" href="/dental-implants-poland">About implants</a>
+      </p>
+    </section>
+
+    <hr />
+    <p class="disclaimer-inline"><strong>Disclaimer:</strong> Information only. Suitability depends on individual diagnostics (CBCT). Results are individual.</p>
+  </div>
+</BaseLayout>
+
+<style>
+  .content { max-width: 56rem; }
+  .breadcrumbs { font-size: 0.875rem; color: var(--color-muted); margin-bottom: 1.5rem; }
+  .breadcrumbs a { text-decoration: none; }
+  header { margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--color-border); }
+  .eyebrow { text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.75rem; color: var(--color-accent-dark); font-weight: 700; margin: 0 0 0.5rem; }
+  .lead { font-size: 1.125rem; color: var(--color-muted); }
+  section { margin-bottom: 2.5rem; }
+  .cta-box { background: var(--color-card); padding: 2rem; border-radius: 8px; border-left: 4px solid var(--color-accent); margin: 3rem 0 2rem; }
+  .cta-box h2 { margin-top: 0; }
+  .disclaimer-inline { font-size: 0.8125rem; color: var(--color-muted); border-left: 3px solid var(--color-border); padding-left: 1rem; margin-top: 2rem; }
+  hr { border: none; border-top: 1px solid var(--color-border); margin: 2rem 0; }
+</style>

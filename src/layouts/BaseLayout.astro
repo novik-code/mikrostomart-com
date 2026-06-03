@@ -1,0 +1,259 @@
+---
+import { site, nav } from '../data/site';
+import SchemaBase from '../components/SchemaBase.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+  ogImage?: string;
+  canonical?: string;
+  noindex?: boolean;
+}
+
+const {
+  title,
+  description = site.description,
+  ogImage = site.ogImage,
+  canonical,
+  noindex = false,
+} = Astro.props;
+
+const pageTitle = title ? `${title} | ${site.shortTitle}` : site.title;
+const canonicalUrl = canonical ?? new URL(Astro.url.pathname, site.url).toString();
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Google Search Console verification — TODO: add code for mikrostomart.com -->
+
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    {noindex && <meta name="robots" content="noindex,nofollow" />}
+
+    <!-- hreflang — language versions -->
+    <link rel="alternate" hreflang="en" href={site.alternates.en} />
+    <link rel="alternate" hreflang="de" href={site.alternates.de} />
+    <link rel="alternate" hreflang="pl" href={site.alternates.pl} />
+    <link rel="alternate" hreflang="x-default" href={site.alternates.en} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content={site.locale} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={new URL(ogImage, site.url).toString()} />
+    <meta property="og:site_name" content={site.shortTitle} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={new URL(ogImage, site.url).toString()} />
+
+    <link rel="alternate" type="application/rss+xml" title={`${site.shortTitle} — Blog`} href="/rss.xml" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <SchemaBase />
+  </head>
+
+  <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container">
+        <a href="/" class="brand">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2 L12 22" />
+              <path d="M8 7 L8 18" />
+              <path d="M16 7 L16 18" />
+              <circle cx="12" cy="6" r="2.5" />
+            </svg>
+          </span>
+          <div>
+            <strong>Mikrostomart</strong>
+            <span class="brand-sub">Dentist in Poland · English-speaking · Dr Nowosielski, M.Sc. RWTH Aachen</span>
+          </div>
+        </a>
+        <nav aria-label="Main navigation">
+          <ul>
+            <li class="lang-switch"><a href="https://mikrostomart.de" rel="noopener" hreflang="de" title="Deutsche Version">DE</a></li>
+            {nav.map((item) => (
+              <li>
+                <a
+                  href={item.href}
+                  aria-current={Astro.url.pathname === item.href ? 'page' : undefined}
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+        <a class="btn-primary" href={`mailto:${site.clinic.email}`}>Free Quote</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h3>Mikrostomart — Dentist in Poland</h3>
+            <p>
+              English-speaking dental care in Opole, Poland — dental implants, All-on-4 and
+              full-mouth restoration at Polish prices with Western quality. Treatment by
+              <strong>{site.author.honorificPrefix} {site.author.name}, {site.author.honorificSuffix}</strong> —
+              M.Sc. RWTH Aachen.
+            </p>
+            <p>Save up to 60% vs. UK/Western Europe. Easy to reach via Wrocław or Katowice airports.</p>
+          </div>
+          <div>
+            <h3>Services</h3>
+            <ul>
+              <li><a href="/dental-implants-poland">Dental Implants Poland</a></li>
+              <li><a href="/all-on-4-poland">All-on-4 Poland</a></li>
+              <li><a href="/dental-treatment-cost-poland">Costs & Prices</a></li>
+              <li><a href="/dental-tourism-poland">How it works</a></li>
+              <li><a href="/blog">Blog</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>About</h3>
+            <ul>
+              <li><a href="/about-us">Dr Marcin Nowosielski</a></li>
+              <li><a href="https://mikrostomart.de" rel="noopener">Deutsch: mikrostomart.de</a></li>
+              <li><a href="https://mikrostomart.pl" rel="noopener">Polski: mikrostomart.pl</a></li>
+              <li><a href="https://nowosielski.pl" rel="noopener">nowosielski.pl</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Clinic & Contact</h3>
+            <address>
+              <strong>Mikrostomart</strong><br />
+              {site.clinic.address.street}<br />
+              {site.clinic.address.postalCode} {site.clinic.address.city}, Poland<br />
+              <a href={site.clinic.phoneHref}>{site.clinic.phone}</a><br />
+              <a href={`mailto:${site.clinic.email}`}>{site.clinic.email}</a><br />
+              <a href={site.clinic.gbpUrl} rel="noopener" target="_blank">📍 Google Maps</a>
+            </address>
+            <p style="font-size: 0.875rem; margin-top: 0.5rem;">
+              Mon-Thu 9:00-20:00, Fri 9:00-16:00<br />
+              Appointments in English
+            </p>
+            <p>
+              <a class="btn-outline" href={`mailto:${site.clinic.email}`}>Send enquiry</a>
+            </p>
+          </div>
+        </div>
+
+        <hr />
+
+        <p class="disclaimer">
+          <strong>Medical disclaimer:</strong> The content is for general information and does
+          not replace dental consultation. Each case requires individual examination, including
+          X-ray/CBCT where needed. Treatment results are individual.
+        </p>
+        <p class="copy">© {new Date().getFullYear()} mikrostomart.com · All rights reserved.</p>
+      </div>
+    </footer>
+
+    <style is:global>
+      /* Design system FILAR EN (mikrostomart.com) — clean / trustworthy
+         Colour scheme: deep teal-emerald + warm amber. Distinct from DE (navy+gold). */
+      :root {
+        --color-bg: #f4f8f6;
+        --color-fg: #14211d;
+        --color-muted: #51635c;
+        --color-primary: #0f5e57;       /* deep teal-emerald */
+        --color-primary-light: #16766c;
+        --color-accent: #e0a458;        /* warm amber — CTA */
+        --color-accent-dark: #c1853a;
+        --color-border: #d2ddd8;
+        --color-card: #ffffff;
+        --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+        --font-display: 'Inter', system-ui, sans-serif;
+        --container-max: 70rem;
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body { margin: 0; font-family: var(--font-sans); color: var(--color-fg); background: var(--color-bg); line-height: 1.7; font-size: 16.5px; -webkit-font-smoothing: antialiased; }
+
+      .container { max-width: var(--container-max); margin: 0 auto; padding: 0 1.5rem; }
+
+      h1, h2, h3, h4 { font-family: var(--font-display); color: var(--color-primary); line-height: 1.2; margin: 0 0 0.5em; letter-spacing: -0.015em; }
+      h1 { font-size: 2.5rem; font-weight: 800; }
+      h2 { font-size: 1.75rem; margin-top: 2.5rem; font-weight: 700; }
+      h3 { font-size: 1.3125rem; margin-top: 1.75rem; font-weight: 700; }
+
+      p { margin: 0 0 1rem; }
+      a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+      a:hover { color: var(--color-accent-dark); }
+
+      blockquote { border-left: 4px solid var(--color-accent); padding: 0.5rem 1.25rem; margin: 1.5rem 0; background: rgba(224, 164, 88, 0.08); font-style: italic; }
+
+      table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; background: var(--color-card); border-radius: 6px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+      th, td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-border); text-align: left; }
+      th { background: var(--color-primary); color: white; font-weight: 600; font-size: 0.9375rem; }
+      tr:last-child td { border-bottom: none; }
+      tr:nth-child(even) td { background: rgba(15, 94, 87, 0.03); }
+
+      code { background: rgba(15, 94, 87, 0.08); padding: 0.125rem 0.375rem; border-radius: 3px; font-size: 0.875em; }
+
+      .skip-link { position: absolute; left: -9999px; top: 0; background: var(--color-primary); color: white; padding: 0.5rem 1rem; z-index: 100; }
+      .skip-link:focus { left: 0; }
+
+      .site-header { background: white; border-bottom: 2px solid var(--color-accent); position: sticky; top: 0; z-index: 50; box-shadow: 0 1px 4px rgba(0,0,0,0.04); }
+      .site-header .container { display: flex; align-items: center; gap: 2rem; padding-top: 1rem; padding-bottom: 1rem; flex-wrap: wrap; }
+      .brand { text-decoration: none; color: var(--color-primary); display: flex; align-items: center; gap: 0.875rem; }
+      .brand-mark { background: var(--color-primary); color: var(--color-accent); width: 2.5rem; height: 2.5rem; display: flex; align-items: center; justify-content: center; border-radius: 50%; }
+      .brand strong { display: block; font-size: 1.0625rem; font-weight: 800; line-height: 1.2; color: var(--color-primary); }
+      .brand-sub { font-size: 0.72rem; color: var(--color-muted); }
+
+      .site-header nav { flex: 1; }
+      .site-header nav ul { display: flex; gap: 1.125rem; list-style: none; padding: 0; margin: 0; flex-wrap: wrap; align-items: center; }
+      .site-header nav a { text-decoration: none; color: var(--color-fg); font-size: 0.875rem; padding: 0.25rem 0; border-bottom: 2px solid transparent; font-weight: 500; }
+      .site-header nav a[aria-current="page"] { border-bottom-color: var(--color-accent); color: var(--color-primary); }
+      .site-header nav a:hover { color: var(--color-accent-dark); }
+      .lang-switch a { font-weight: 700; border: 1px solid var(--color-border); border-radius: 4px; padding: 0.15rem 0.5rem !important; }
+
+      .btn-primary { display: inline-block; background: var(--color-accent); color: #14211d !important; padding: 0.6875rem 1.375rem; text-decoration: none !important; border-radius: 4px; font-weight: 700; font-size: 0.875rem; letter-spacing: 0.01em; transition: all 0.2s; border: none; }
+      .btn-primary:hover { background: var(--color-accent-dark); color: white !important; transform: translateY(-1px); }
+
+      .btn-outline { display: inline-block; background: transparent; color: var(--color-primary) !important; padding: 0.5rem 1rem; text-decoration: none !important; border-radius: 4px; font-weight: 600; font-size: 0.875rem; border: 1.5px solid var(--color-primary); }
+      .btn-outline:hover { background: var(--color-primary); color: white !important; }
+
+      main { min-height: 60vh; padding: 2.5rem 0 5rem; }
+
+      .site-footer { background: var(--color-primary); color: #cadbd6; padding: 3rem 0 1.5rem; margin-top: 4rem; }
+      .site-footer h3 { color: var(--color-accent); font-size: 0.9375rem; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700; }
+      .site-footer a { color: #e7f0ed; text-decoration: underline; text-underline-offset: 2px; }
+      .site-footer a:hover { color: var(--color-accent); }
+      .site-footer hr { border: none; border-top: 1px solid rgba(255,255,255,0.15); margin: 2rem 0 1.5rem; }
+      .footer-grid { display: grid; gap: 2.5rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+      .footer-grid ul { list-style: none; padding: 0; }
+      .footer-grid ul li { margin-bottom: 0.5rem; font-size: 0.9375rem; }
+      .footer-grid p { font-size: 0.9375rem; }
+      .footer-grid address { font-style: normal; font-size: 0.9375rem; line-height: 1.7; }
+      .disclaimer { font-size: 0.8125rem; background: rgba(255,255,255,0.05); padding: 1rem; border-left: 3px solid var(--color-accent); margin: 1rem 0; }
+      .copy { font-size: 0.75rem; color: #8aa49d; text-align: center; margin: 0; }
+
+      @media (max-width: 768px) {
+        h1 { font-size: 2rem; }
+        h2 { font-size: 1.5rem; }
+        .site-header .container { gap: 1rem; }
+        .site-header nav ul { gap: 0.875rem; }
+      }
+    </style>
+  </body>
+</html>

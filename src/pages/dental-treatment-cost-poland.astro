@@ -1,0 +1,109 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
+---
+
+<BaseLayout
+  title="Dental Treatment Cost in Poland — Price Comparison vs. UK"
+  description="How much does dental treatment in Poland cost? Price comparison vs. UK/Western Europe for implants, All-on-4, crowns, veneers. Save up to 60% — worth it even with travel. Mikrostomart Opole."
+>
+  <div class="container content">
+    <nav class="breadcrumbs"><a href="/">Home</a> · <span>Costs & Prices</span></nav>
+
+    <header>
+      <p class="eyebrow">Costs · Price comparison</p>
+      <h1>Dental treatment in Poland — costs & savings compared</h1>
+      <p class="lead">
+        With identical materials and modern technology, dental treatment in Poland often costs
+        <strong>40-60% less</strong> than in the UK or Western Europe. Here's an honest price
+        comparison — and a worked example of when the trip pays off.
+      </p>
+    </header>
+
+    <section>
+      <h2>Price comparison: UK vs. Poland</h2>
+      <table>
+        <thead><tr><th>Service</th><th>Poland (Mikrostomart)</th><th>UK (approx.)</th><th>Savings</th></tr></thead>
+        <tbody>
+          <tr><td>Implant + zirconia crown</td><td>€1,300-1,900</td><td>£2,000-3,000</td><td>~50%</td></tr>
+          <tr><td>All-on-4 (one jaw)</td><td>€6,000-9,000</td><td>£12,000-20,000</td><td>~55%</td></tr>
+          <tr><td>Zirconia crown</td><td>€250-400</td><td>£600-1,000</td><td>~60%</td></tr>
+          <tr><td>Veneer (ceramic)</td><td>€350-550</td><td>£800-1,200</td><td>~55%</td></tr>
+          <tr><td>Root canal (microscope)</td><td>€150-350</td><td>£500-1,000</td><td>~60%</td></tr>
+          <tr><td>Sinus lift</td><td>€350-700</td><td>£700-1,400</td><td>~55%</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:0.875rem;color:var(--color-muted)">Indicative 2026; binding quote after diagnostics (CBCT).</p>
+    </section>
+
+    <section>
+      <h2>Why is it cheaper in Poland</h2>
+      <p>Lower prices do <strong>not</strong> mean lower quality. The reasons are economic:</p>
+      <ul>
+        <li><strong>Lower running costs</strong> (rent, wages, lab costs in Poland)</li>
+        <li><strong>Same materials</strong> (Straumann, Nobel, zirconia — global market)</li>
+        <li><strong>Same technology</strong> (microscope, CBCT, digital scanner)</li>
+      </ul>
+      <p>You pay less for the <em>same</em> standard.</p>
+    </section>
+
+    <section>
+      <h2>Does the trip pay off? A worked example</h2>
+      <p>Example: <strong>All-on-4, one jaw</strong></p>
+      <table>
+        <thead><tr><th>Item</th><th>Amount</th></tr></thead>
+        <tbody>
+          <tr><td>Treatment in the UK</td><td>~£15,000</td></tr>
+          <tr><td>Treatment in Poland (Mikrostomart)</td><td>~£6,500</td></tr>
+          <tr><td>Flights + accommodation (2 trips)</td><td>~£500-900</td></tr>
+          <tr><td><strong>Savings after travel</strong></td><td><strong>~£7,600-8,000</strong></td></tr>
+        </tbody>
+      </table>
+      <p>For larger treatments, the savings are <strong>many times</strong> the travel cost.</p>
+    </section>
+
+    <section>
+      <h2>Reimbursement & insurance</h2>
+      <p>
+        Under the EU cross-border healthcare directive, EU residents may be able to claim partial
+        reimbursement for treatment in another EU country (rules vary — clarify with your insurer
+        first). We provide the necessary <strong>invoice and documentation</strong>. For UK patients,
+        treatment is typically private/self-funded.
+      </p>
+    </section>
+
+    <section>
+      <h2>Transparency: no hidden costs</h2>
+      <p>
+        You receive a written cost estimate <strong>before treatment begins</strong>, in English.
+        No vague "from" prices without a ceiling, no surprises during treatment.
+      </p>
+    </section>
+
+    <section class="cta-box">
+      <h2>Free, no-obligation cost estimate</h2>
+      <p>Send us X-rays or a description of what you need — you'll get a concrete price in English before you travel.</p>
+      <p>
+        <a class="btn-primary" href={`mailto:${site.clinic.email}`}>Request a quote →</a>
+        &nbsp; <a class="btn-outline" href="/dental-tourism-poland">How it works</a>
+      </p>
+    </section>
+
+    <hr />
+    <p class="disclaimer-inline"><strong>Disclaimer:</strong> Prices are indicative and may vary. The binding figure is the individual quote after examination. Clarify reimbursement with your insurer.</p>
+  </div>
+</BaseLayout>
+
+<style>
+  .content { max-width: 56rem; }
+  .breadcrumbs { font-size: 0.875rem; color: var(--color-muted); margin-bottom: 1.5rem; }
+  .breadcrumbs a { text-decoration: none; }
+  header { margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--color-border); }
+  .eyebrow { text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.75rem; color: var(--color-accent-dark); font-weight: 700; margin: 0 0 0.5rem; }
+  .lead { font-size: 1.125rem; color: var(--color-muted); }
+  section { margin-bottom: 2.5rem; }
+  .cta-box { background: var(--color-card); padding: 2rem; border-radius: 8px; border-left: 4px solid var(--color-accent); margin: 3rem 0 2rem; }
+  .cta-box h2 { margin-top: 0; }
+  .disclaimer-inline { font-size: 0.8125rem; color: var(--color-muted); border-left: 3px solid var(--color-border); padding-left: 1rem; margin-top: 2rem; }
+  hr { border: none; border-top: 1px solid var(--color-border); margin: 2rem 0; }
+</style>

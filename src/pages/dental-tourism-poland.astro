@@ -1,0 +1,115 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
+---
+
+<BaseLayout
+  title="Dental Tourism in Poland — How it works, travel to Opole, guarantee"
+  description="Planning dental treatment in Poland: travel to Opole via Wrocław/Katowice airports, the process in 2 trips, appointments, guarantee, aftercare at home. Practical guide for international patients."
+>
+  <div class="container content">
+    <nav class="breadcrumbs"><a href="/">Home</a> · <span>How it works</span></nav>
+
+    <header>
+      <p class="eyebrow">Dental tourism · travel · process</p>
+      <h1>Dental treatment in Poland — how it actually works</h1>
+      <p class="lead">
+        Treatment abroad sounds complicated — but it isn't when well organised. Opole is easy to
+        reach via the airports of <strong>Wrocław and Katowice</strong> (~1 hour away), and the
+        entire contact is <strong>in English</strong>. Here's the practical guide.
+      </p>
+    </header>
+
+    <section>
+      <h2>Where is Opole</h2>
+      <p>
+        Opole is in <strong>south-west Poland</strong>, on the A4 motorway between the German
+        border and Kraków. Nearby airports:
+      </p>
+      <ul>
+        <li><strong>Wrocław (WRO)</strong> — ~1 hour to Opole</li>
+        <li><strong>Katowice (KTW)</strong> — ~1 hour to Opole</li>
+        <li><strong>Kraków (KRK)</strong> — ~1.5 hours to Opole</li>
+      </ul>
+      <p>Direct flights from many UK and Irish cities to Wrocław/Katowice, then a short transfer or train.</p>
+    </section>
+
+    <section>
+      <h2>The process — usually just 2 trips</h2>
+      <ol>
+        <li><strong>Before you travel:</strong> send X-rays/description. We prepare an assessment, treatment plan and cost estimate — in English.</li>
+        <li><strong>Trip 1:</strong> examination (CBCT), treatment or implant placement. For All-on-4, fixed temporary teeth often the same day.</li>
+        <li><strong>Healing phase:</strong> at home (3-6 months for implants).</li>
+        <li><strong>Trip 2:</strong> final restoration (crowns/bridge).</li>
+      </ol>
+      <p>For simpler treatments (crowns, veneers, root canal) often <strong>one trip</strong> is enough.</p>
+    </section>
+
+    <section>
+      <h2>Accommodation & stay</h2>
+      <p>
+        Opole offers <strong>hotels and guesthouses</strong> in all price ranges, many minutes from
+        the clinic. We're happy to recommend options. Opole is a charming riverside city — many
+        patients combine treatment with a short stay.
+      </p>
+    </section>
+
+    <section>
+      <h2>Language — the key advantage</h2>
+      <p>
+        The most common pitfall of dental tourism: communication problems. Here the
+        <strong>treating dentist himself speaks fluent English</strong> (M.Sc. RWTH Aachen). No
+        interpreter, no misunderstandings — you discuss diagnosis, options and costs directly with
+        the dentist. <a href="/about-us">More about Dr Nowosielski →</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>Guarantee and aftercare at home</h2>
+      <p>
+        Implants carry the <strong>manufacturer guarantee</strong> (Straumann/Nobel) plus our
+        treatment guarantee. You receive an <strong>implant passport</strong> and full records.
+        Routine check-ups and cleaning can be done by your dentist at home. For questions we are
+        reachable <strong>in English</strong>.
+      </p>
+    </section>
+
+    <section>
+      <h2>What to check before dental tourism</h2>
+      <ul>
+        <li>✅ <strong>Does the dentist speak your language?</strong> (not just reception)</li>
+        <li>✅ <strong>Which materials?</strong> (branded implants with guarantee)</li>
+        <li>✅ <strong>Modern diagnostics?</strong> (in-house CBCT, digital scanner)</li>
+        <li>✅ <strong>Written cost estimate</strong> before the trip</li>
+        <li>✅ <strong>Guarantee & documentation</strong> (implant passport)</li>
+        <li>✅ <strong>Realistic travel plan</strong> (number of trips clear)</li>
+      </ul>
+    </section>
+
+    <section class="cta-box">
+      <h2>Plan your treatment — free enquiry</h2>
+      <p>Tell us about your case and send X-rays if you have them. We'll create a plan including travel guidance and a cost estimate — in English.</p>
+      <p>
+        <a class="btn-primary" href={`mailto:${site.clinic.email}`}>Send enquiry →</a>
+        &nbsp; <a class="btn-outline" href={site.clinic.gbpUrl} rel="noopener">📍 Clinic on Google Maps</a>
+      </p>
+    </section>
+
+    <hr />
+    <p class="disclaimer-inline"><strong>Disclaimer:</strong> Information only. Travel times are approximate. Treatment plan and number of trips are individual.</p>
+  </div>
+</BaseLayout>
+
+<style>
+  .content { max-width: 56rem; }
+  .breadcrumbs { font-size: 0.875rem; color: var(--color-muted); margin-bottom: 1.5rem; }
+  .breadcrumbs a { text-decoration: none; }
+  header { margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--color-border); }
+  .eyebrow { text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.75rem; color: var(--color-accent-dark); font-weight: 700; margin: 0 0 0.5rem; }
+  .lead { font-size: 1.125rem; color: var(--color-muted); }
+  section { margin-bottom: 2.5rem; }
+  .cta-box { background: var(--color-card); padding: 2rem; border-radius: 8px; border-left: 4px solid var(--color-accent); margin: 3rem 0 2rem; }
+  .cta-box h2 { margin-top: 0; }
+  .disclaimer-inline { font-size: 0.8125rem; color: var(--color-muted); border-left: 3px solid var(--color-border); padding-left: 1rem; margin-top: 2rem; }
+  hr { border: none; border-top: 1px solid var(--color-border); margin: 2rem 0; }
+</style>
