@@ -1,7 +1,7 @@
 ---
 title: 'Dental treatment in Poland — safe or risky? What you need to know'
 description: 'Is dental tourism in Poland safe or risky? Honest answers: quality, materials, guarantee, language, what to check. A guide for international patients considering treatment abroad.'
-pubDate: 2026-05-14
+pubDate: 2026-05-06
 category: patient-guide
 tags: [dental-tourism, safety, quality, guide]
 draft: false

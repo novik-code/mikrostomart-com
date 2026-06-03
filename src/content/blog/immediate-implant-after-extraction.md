@@ -1,7 +1,7 @@
 ---
 title: 'Immediate implant placement — implant right after extraction'
 description: 'Immediate implant placement: an implant placed right after tooth extraction instead of waiting months. Benefits, requirements, process, who it suits. Saves time and a trip. Mikrostomart Opole.'
-pubDate: 2026-05-27
+pubDate: 2026-05-21
 category: dental-implants
 tags: [immediate-implant, implant, extraction, process]
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: 'Root canal under the microscope — save the tooth instead of pulling it'
 description: 'Microscopic root canal treatment in Poland — save the tooth instead of extracting. Why the microscope raises success to 90-95%, the process, costs. Also for re-treatment. Mikrostomart Opole.'
-pubDate: 2026-06-03
+pubDate: 2026-05-30
 category: treatments
 tags: [root-canal, endodontics, microscope, tooth-preservation]
 draft: false
