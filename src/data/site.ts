@@ -6,12 +6,12 @@ export const site = {
   title: 'Dentist in Poland — Dental Implants & Treatment | Mikrostomart Opole',
   shortTitle: 'Mikrostomart — Dentist Poland',
   description:
-    'English-speaking dentist in Poland (Opole) — dental implants, All-on-4, full-mouth restoration at Polish prices, Western quality. Treatment by Dr Marcin Nowosielski, M.Sc. RWTH Aachen. Save up to 60%.',
-  ogImage: '/og-default.svg',
+    'English-speaking dentist in Poland (Opole) — dental implants, All-on-4, full-mouth restoration at Polish prices, Western quality. Treatment by Marcin Nowosielski, M.Sc. RWTH Aachen. Save up to 60%.',
+  ogImage: '/og-default.png',
   locale: 'en-GB',
   author: {
     name: 'Marcin Nowosielski',
-    honorificPrefix: 'Dr',
+    honorificPrefix: '',
     honorificSuffix: 'M.Sc.',
     canonicalUrl: 'https://nowosielski.pl',
     canonicalId: 'https://nowosielski.pl/#person',
@@ -63,10 +63,22 @@ export const site = {
     'affordable dental implants Europe',
     'dentist Opole',
   ],
-  alternates: {
-    de: 'https://mikrostomart.de',
-    en: 'https://mikrostomart.com',
-    pl: 'https://mikrostomart.pl',
+  // hreflang — per-URL language counterparts (only pages with a real counterpart).
+  // pl-hub (mikrostomart.pl) omitted: external, no guaranteed reciprocity.
+  i18n: {
+    self: 'en',
+    otherLang: 'de',
+    otherBase: 'https://mikrostomart.de',
+    // path on this domain -> counterpart on mikrostomart.de
+    pairs: {
+      '/': '/',
+      '/dental-implants-poland': '/zahnimplantate-polen',
+      '/all-on-4-poland': '/all-on-4-polen',
+      '/dental-treatment-cost-poland': '/zahnersatz-kosten-polen',
+      '/dental-tourism-poland': '/zahntourismus-opole',
+      '/about-us': '/ueber-uns',
+      '/blog': '/blog',
+    },
   },
   lang: 'en',
 };

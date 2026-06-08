@@ -7,16 +7,16 @@
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
 
-  <text x="80" y="170" font-family="Inter, system-ui" font-size="36" fill="#c87a4a" letter-spacing="6" font-weight="700">PRZEWODNIK PACJENTA · OPOLE</text>
+  <text x="80" y="170" font-family="Inter, system-ui" font-size="36" fill="#c87a4a" letter-spacing="6" font-weight="700">DENTIST IN POLAND · OPOLE</text>
 
-  <text x="80" y="290" font-family="Inter, system-ui" font-size="96" fill="white" font-weight="800">Implantologia</text>
-  <text x="80" y="395" font-family="Inter, system-ui" font-size="96" fill="white" font-weight="800">Opole</text>
+  <text x="80" y="290" font-family="Inter, system-ui" font-size="96" fill="white" font-weight="800">Dentist</text>
+  <text x="80" y="395" font-family="Inter, system-ui" font-size="96" fill="white" font-weight="800">in Poland</text>
 
   <line x1="80" y1="445" x2="320" y2="445" stroke="#c87a4a" stroke-width="4"/>
 
-  <text x="80" y="500" font-family="Inter, system-ui" font-size="28" fill="#d4dde8">Implanty · All-on-4 · Sinus lift · Augmentacja kości</text>
+  <text x="80" y="500" font-family="Inter, system-ui" font-size="28" fill="#d4dde8">Dental implants · All-on-4 · Full-mouth</text>
 
-  <text x="80" y="555" font-family="Inter, system-ui" font-size="24" fill="#8ea5be">lek. dent. Marcin Nowosielski, M.Sc. RWTH Aachen  ·  implantologia.opole.pl</text>
+  <text x="80" y="555" font-family="Inter, system-ui" font-size="24" fill="#8ea5be">Marcin Nowosielski, M.Sc. RWTH Aachen  ·  mikrostomart.com</text>
 
-  <text x="1120" y="555" text-anchor="end" font-family="Inter, system-ui" font-size="180" font-weight="800" fill="#c87a4a" opacity="0.18">iO</text>
+  <text x="1120" y="555" text-anchor="end" font-family="Inter, system-ui" font-size="180" font-weight="800" fill="#c87a4a" opacity="0.18">EN</text>
 </svg>

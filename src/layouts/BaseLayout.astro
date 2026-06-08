@@ -20,6 +20,15 @@ const {
 
 const pageTitle = title ? `${title} | ${site.shortTitle}` : site.title;
 const canonicalUrl = canonical ?? new URL(Astro.url.pathname, site.url).toString();
+
+// hreflang per-URL — only pages with a real language counterpart
+const i18n = site.i18n;
+const selfPath = Astro.url.pathname === '/' ? '/' : Astro.url.pathname.replace(/\/$/, '');
+const otherPath = i18n.pairs[selfPath];
+const otherUrl = otherPath
+  ? new URL(otherPath === '/' ? '/' : otherPath + '/', i18n.otherBase).toString()
+  : null;
+const xDefaultUrl = i18n.self === 'en' ? canonicalUrl : otherUrl;
 ---
 
 <!doctype html>
@@ -38,11 +47,14 @@ const canonicalUrl = canonical ?? new URL(Astro.url.pathname, site.url).toString
     <link rel="canonical" href={canonicalUrl} />
     {noindex && <meta name="robots" content="noindex,nofollow" />}
 
-    <!-- hreflang — language versions -->
-    <link rel="alternate" hreflang="en" href={site.alternates.en} />
-    <link rel="alternate" hreflang="de" href={site.alternates.de} />
-    <link rel="alternate" hreflang="pl" href={site.alternates.pl} />
-    <link rel="alternate" hreflang="x-default" href={site.alternates.en} />
+    <!-- hreflang — language versions (per-URL, only pages with a real counterpart) -->
+    {otherUrl && (
+      <Fragment>
+        <link rel="alternate" hreflang={i18n.self} href={canonicalUrl} />
+        <link rel="alternate" hreflang={i18n.otherLang} href={otherUrl} />
+        <link rel="alternate" hreflang="x-default" href={xDefaultUrl} />
+      </Fragment>
+    )}
 
     <meta property="og:type" content="website" />
     <meta property="og:locale" content={site.locale} />
@@ -50,6 +62,9 @@ const canonicalUrl = canonical ?? new URL(Astro.url.pathname, site.url).toString
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:image" content={new URL(ogImage, site.url).toString()} />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:site_name" content={site.shortTitle} />
 
     <meta name="twitter:card" content="summary_large_image" />
@@ -79,7 +94,7 @@ const canonicalUrl = canonical ?? new URL(Astro.url.pathname, site.url).toString
           </span>
           <div>
             <strong>Mikrostomart</strong>
-            <span class="brand-sub">Dentist in Poland · English-speaking · Dr Nowosielski, M.Sc. RWTH Aachen</span>
+            <span class="brand-sub">Dentist in Poland · English-speaking · Marcin Nowosielski, M.Sc. RWTH Aachen</span>
           </div>
         </a>
         <nav aria-label="Main navigation">
