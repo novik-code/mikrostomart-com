@@ -11,7 +11,7 @@ export const site = {
   locale: 'en-GB',
   author: {
     name: 'Marcin Nowosielski',
-    honorificPrefix: '',
+    honorificPrefix: 'lek. dent.',
     honorificSuffix: 'M.Sc.',
     canonicalUrl: 'https://nowosielski.pl',
     canonicalId: 'https://nowosielski.pl/#person',
@@ -21,7 +21,7 @@ export const site = {
   },
   clinic: {
     name: 'Mikrostomart',
-    legalName: 'Mikrostomart — Premium Dental Clinic Opole',
+    legalName: 'ELMAR Sp. z o.o.',
     url: 'https://mikrostomart.pl',
     bookingUrl: 'https://mikrostomart.pl/rezerwacja',
     contactUrl: 'https://mikrostomart.pl/kontakt',
