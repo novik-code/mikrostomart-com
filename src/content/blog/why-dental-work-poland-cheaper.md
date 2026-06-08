@@ -1,7 +1,7 @@
 ---
 title: 'Why is dental work in Poland cheaper? (without losing quality)'
 description: 'Why does dental work in Poland cost 40-60% less than the UK? The real reasons — lower running costs, same materials. Why cheaper does not mean worse. Mikrostomart Opole.'
-pubDate: 2026-05-12
+pubDate: 2026-04-06
 category: costs
 tags: [costs, price-comparison, savings, quality]
 draft: false
@@ -74,6 +74,6 @@ Dental work in Poland is cheaper because **running costs are lower** — not bec
 
 ---
 
-**Author:** Dr Marcin Nowosielski, M.Sc. RWTH Aachen — Mikrostomart clinic, Opole.
+**Author:** Marcin Nowosielski, M.Sc. RWTH Aachen — implantologist, Mikrostomart clinic, Opole.
 
 **Disclaimer:** Prices are indicative. Information only.

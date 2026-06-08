@@ -1,7 +1,7 @@
 ---
 title: 'Your dental treatment in Poland step by step — from first enquiry to aftercare'
 description: 'Step by step: how dental treatment in Poland works — first enquiry with an X-ray, written treatment plan in English, travel, treatment, healing at home, final restoration and aftercare. Planning certainty for international patients. Mikrostomart Opole.'
-pubDate: 2026-06-08
+pubDate: 2026-05-28
 category: patient-guide
 tags: [process, planning, dental-tourism, travel, aftercare]
 draft: false
@@ -75,6 +75,6 @@ The process is predictable and transparent: **enquiry with an X-ray → written 
 
 ---
 
-**Author:** Dr Marcin Nowosielski, M.Sc. RWTH Aachen — Mikrostomart clinic, Opole.
+**About the author:** Marcin Nowosielski, dentist, M.Sc. RWTH Aachen — implantologist.
 
 **Disclaimer:** Travel times and number of trips are approximate; the exact plan depends on your diagnosis. Information only.

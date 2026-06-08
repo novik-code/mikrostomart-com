@@ -1,7 +1,7 @@
 ---
 title: 'Dental implant materials: titanium vs ceramic (zirconia) — which is better?'
 description: 'Titanium or ceramic (zirconia) dental implants? Comparison of strength, aesthetics, biocompatibility, long-term data, cost and indications. Which material suits whom. Mikrostomart Opole, Poland.'
-pubDate: 2026-06-07
+pubDate: 2026-05-22
 category: dental-implants
 tags: [titanium, ceramic, zirconia, implant-material, comparison]
 draft: false
@@ -63,6 +63,6 @@ Honestly: with both materials, **diagnostics (CBCT), planning, surgical techniqu
 
 ---
 
-**Author:** Dr Marcin Nowosielski, M.Sc. RWTH Aachen — implantologist, Mikrostomart clinic, Opole.
+**Author:** Marcin Nowosielski, M.Sc. RWTH Aachen — dentist & implantologist, [Mikrostomart](https://mikrostomart.pl) clinic, Opole.
 
 **Disclaimer:** Suitability depends on individual diagnostics. Information only.

@@ -1,7 +1,7 @@
 ---
 title: 'Immediate implant placement — implant right after extraction'
 description: 'Immediate implant placement: an implant placed right after tooth extraction instead of waiting months. Benefits, requirements, process, who it suits. Saves time and a trip. Mikrostomart Opole.'
-pubDate: 2026-05-21
+pubDate: 2026-04-19
 category: dental-implants
 tags: [immediate-implant, implant, extraction, process]
 draft: false
@@ -75,6 +75,6 @@ Immediate implant placement can save time, appointments and — for internationa
 
 ---
 
-**Author:** Dr Marcin Nowosielski, M.Sc. RWTH Aachen — implantologist, Mikrostomart clinic, Opole.
+**Author:** Marcin Nowosielski, M.Sc. RWTH Aachen — dentist, [Mikrostomart](https://mikrostomart.pl) clinic, Opole.
 
 **Disclaimer:** Suitability depends on individual diagnostics (CBCT). Information only.

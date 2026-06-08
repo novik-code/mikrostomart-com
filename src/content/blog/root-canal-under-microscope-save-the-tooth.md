@@ -1,7 +1,7 @@
 ---
 title: 'Root canal under the microscope — save the tooth instead of pulling it'
 description: 'Microscopic root canal treatment in Poland — save the tooth instead of extracting. Why the microscope raises success to 90-95%, the process, costs. Also for re-treatment. Mikrostomart Opole.'
-pubDate: 2026-05-30
+pubDate: 2026-05-02
 category: treatments
 tags: [root-canal, endodontics, microscope, tooth-preservation]
 draft: false
@@ -65,6 +65,6 @@ A microscopic root canal can **save your own tooth** — pain-free, with a 90-95
 
 ---
 
-**Author:** Dr Marcin Nowosielski, M.Sc. RWTH Aachen — endodontics & implantology, Mikrostomart clinic, Opole.
+**Author:** Marcin Nowosielski, M.Sc. RWTH Aachen — dentist & implantologist, [Mikrostomart](https://mikrostomart.pl) clinic in Opole.
 
 **Disclaimer:** Prognosis and suitability depend on individual diagnostics. Information only.

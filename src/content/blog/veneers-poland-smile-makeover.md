@@ -1,7 +1,7 @@
 ---
 title: 'Veneers in Poland — a beautiful smile at a fair price'
 description: 'Veneers in Poland: process, durability, costs vs the UK. For a natural, harmonious smile. Also as a full smile makeover. Mikrostomart Opole, Poland.'
-pubDate: 2026-06-03
+pubDate: 2026-05-06
 category: treatments
 tags: [veneers, aesthetics, front-teeth, smile-makeover]
 draft: false
@@ -72,6 +72,6 @@ Veneers are the tooth-preserving route to a beautiful, natural smile — and far
 
 ---
 
-**Author:** Dr Marcin Nowosielski, M.Sc. RWTH Aachen — Mikrostomart clinic, Opole.
+**Author:** Marcin Nowosielski, M.Sc. RWTH Aachen — full-arch implantology, [Mikrostomart](https://mikrostomart.pl) clinic, Opole.
 
 **Disclaimer:** Suitability depends on individual diagnostics. Information only.

@@ -1,7 +1,7 @@
 ---
 title: 'All-on-4 vs. dentures — comparison for international patients'
 description: 'All-on-4 or a removable full denture? Comparison of stability, comfort, cost, durability. Why fixed teeth on implants are often the better choice. Mikrostomart Opole, Poland.'
-pubDate: 2026-05-15
+pubDate: 2026-04-08
 category: all-on-x
 tags: [all-on-4, dentures, comparison, full-arch]
 draft: false
@@ -76,6 +76,6 @@ All-on-4 offers **firm hold, full chewing power and durability** — and stops t
 
 ---
 
-**Author:** Dr Marcin Nowosielski, M.Sc. RWTH Aachen — implantologist, Mikrostomart clinic, Opole.
+**Author:** Marcin Nowosielski, M.Sc. RWTH Aachen — dentist. [About us →](/about-us)
 
 **Disclaimer:** Suitability depends on individual diagnostics. Information only.

@@ -1,7 +1,7 @@
 ---
 title: 'Single tooth implant vs bridge — which is the better choice?'
 description: 'Single tooth implant or a dental bridge for one gap? Comparison of protecting neighbouring teeth, bone preservation, durability and cost. Why the implant usually wins. Mikrostomart Opole, Poland.'
-pubDate: 2026-06-05
+pubDate: 2026-05-10
 category: dental-implants
 tags: [single-implant, bridge, comparison, missing-tooth]
 draft: false
@@ -53,6 +53,6 @@ For a single gap with healthy neighbouring teeth and good bone, the **implant is
 
 ---
 
-**Author:** Dr Marcin Nowosielski, M.Sc. RWTH Aachen — implantologist, Mikrostomart clinic, Opole.
+**Author:** Marcin Nowosielski, M.Sc. RWTH Aachen — full-arch implantology, [Mikrostomart](https://mikrostomart.pl) clinic, Opole.
 
 **Disclaimer:** Suitability depends on individual diagnostics (CBCT). Information only.

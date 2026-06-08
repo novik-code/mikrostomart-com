@@ -1,7 +1,7 @@
 ---
 title: 'Dental treatment in Poland — safe or risky? What you need to know'
 description: 'Is dental tourism in Poland safe or risky? Honest answers: quality, materials, guarantee, language, what to check. A guide for international patients considering treatment abroad.'
-pubDate: 2026-05-06
+pubDate: 2026-03-31
 category: patient-guide
 tags: [dental-tourism, safety, quality, guide]
 draft: false
@@ -87,6 +87,6 @@ Dental treatment in Poland is **safe — if you choose the right clinic**. The e
 
 ---
 
-**Author:** Dr Marcin Nowosielski, M.Sc. RWTH Aachen — dentist & implantologist, Mikrostomart clinic, Opole. Fluent in English.
+**Author:** Marcin Nowosielski, M.Sc. RWTH Aachen — full-arch implantology, [Mikrostomart](https://mikrostomart.pl) clinic in Opole.
 
 **Disclaimer:** Information only; does not replace dental consultation.

@@ -1,7 +1,7 @@
 ---
 title: 'Guarantee & aftercare: what if something goes wrong after you fly home?'
 description: 'Guarantee on dental work in Poland, aftercare once you are back home, what happens if there is a complication. Honest answers to the biggest dental-tourism worry. Mikrostomart Opole.'
-pubDate: 2026-05-09
+pubDate: 2026-04-03
 category: patient-guide
 tags: [guarantee, aftercare, dental-tourism, safety]
 draft: false
@@ -58,6 +58,6 @@ Guarantee and aftercare are clearly defined: written guarantee, free correction 
 
 ---
 
-**Author:** Dr Marcin Nowosielski, M.Sc. RWTH Aachen — Mikrostomart clinic, Opole.
+**Author:** Marcin Nowosielski, M.Sc. RWTH Aachen — dentist, [Mikrostomart](https://mikrostomart.pl) clinic in Opole.
 
 **Disclaimer:** Guarantee terms follow the individual treatment agreement. Information only.

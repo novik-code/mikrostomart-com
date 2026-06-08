@@ -1,7 +1,7 @@
 ---
 title: 'Travelling to Opole for dental treatment — flights, transfers, stay'
 description: 'How to travel to Opole for your dental treatment: flights to Wrocław/Katowice, transfers, accommodation, journey times. A practical travel guide for international dental patients.'
-pubDate: 2026-05-27
+pubDate: 2026-04-28
 category: dental-tourism
 tags: [travel, opole, flights, dental-tourism]
 draft: false
@@ -66,6 +66,6 @@ Opole is easy to reach — ~1 hour from Wrocław or Katowice airports, with dire
 
 ---
 
-**Author:** Dr Marcin Nowosielski, M.Sc. RWTH Aachen — Mikrostomart clinic, Opole.
+**Author:** Marcin Nowosielski, M.Sc. RWTH Aachen — dentist & implantologist.
 
 **Disclaimer:** Travel times are approximate. Information only.

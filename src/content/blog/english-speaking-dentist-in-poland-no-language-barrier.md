@@ -1,7 +1,7 @@
 ---
 title: 'English-speaking dentist in Poland — no language barrier'
 description: 'Dental treatment in Poland in English: consultation, treatment plan and aftercare in your language. Why clear English-language communication matters for international patients. Mikrostomart Opole.'
-pubDate: 2026-06-06
+pubDate: 2026-05-17
 category: patient-guide
 tags: [english-speaking, language-barrier, communication, patient-guide]
 draft: false
@@ -53,6 +53,6 @@ High-quality dental treatment at Polish prices — **all in English**: consultat
 
 ---
 
-**Author:** Dr Marcin Nowosielski, M.Sc. RWTH Aachen — Mikrostomart clinic, Opole.
+**About the author:** Marcin Nowosielski, dentist, M.Sc. RWTH Aachen — implantologist.
 
 **Disclaimer:** Information only.

@@ -1,7 +1,7 @@
 ---
 title: 'Bone graft & sinus lift — an implant even with low jawbone'
 description: 'Not enough jawbone for an implant? Bone grafting and sinus lift make it possible anyway. Methods, process, costs in Poland. Also after years of missing teeth. Mikrostomart Opole.'
-pubDate: 2026-05-18
+pubDate: 2026-04-15
 category: dental-implants
 tags: [bone-graft, sinus-lift, augmentation, implant]
 draft: false
@@ -66,6 +66,6 @@ Too little bone is almost never a final "no" to an implant. With bone grafting, 
 
 ---
 
-**Author:** Dr Marcin Nowosielski, M.Sc. RWTH Aachen — implantologist, Mikrostomart clinic, Opole.
+**Author:** Marcin Nowosielski, M.Sc. RWTH Aachen — dentist, [Mikrostomart](https://mikrostomart.pl) clinic, Opole.
 
 **Disclaimer:** Suitability depends on individual diagnostics (CBCT). Information only.

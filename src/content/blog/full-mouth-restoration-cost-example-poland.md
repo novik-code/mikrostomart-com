@@ -1,7 +1,7 @@
 ---
 title: 'Cost example: what does full-mouth restoration cost in Poland?'
 description: 'A concrete cost example for full-mouth dental restoration in Poland vs the UK — with the maths, travel costs and real savings. How much international patients actually save. Mikrostomart Opole.'
-pubDate: 2026-05-24
+pubDate: 2026-04-22
 category: costs
 tags: [costs, cost-example, savings, full-mouth]
 draft: false
@@ -72,6 +72,6 @@ A full-mouth restoration often costs **around half** in Poland compared to the U
 
 ---
 
-**Author:** Dr Marcin Nowosielski, M.Sc. RWTH Aachen — Mikrostomart clinic, Opole.
+**Author:** Marcin Nowosielski, M.Sc. RWTH Aachen — full-arch implantology. [About us →](/about-us)
 
 **Disclaimer:** Example figures for orientation; binding prices only after individual examination. Information only.
