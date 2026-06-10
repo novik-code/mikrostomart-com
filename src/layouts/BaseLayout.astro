@@ -122,38 +122,17 @@ const xDefaultUrl = i18n.self === 'en' ? canonicalUrl : otherUrl;
 
     <footer class="site-footer">
       <div class="container">
-        <div class="footer-grid">
-          <div>
+        <div class="footer-duo">
+          <div class="footer-duo-col">
             <h3>Mikrostomart — Dentist in Poland</h3>
             <p>
               English-speaking dental care in Opole, Poland — dental implants, All-on-4 and
               full-mouth restoration at Polish prices with Western quality. Treatment by
               <strong>{site.author.honorificPrefix} {site.author.name}, {site.author.honorificSuffix}</strong> —
-              M.Sc. RWTH Aachen.
+              M.Sc. RWTH Aachen. Save up to 60% vs. UK/Western Europe; easy to reach via
+              Wrocław or Katowice airports.
             </p>
-            <p>Save up to 60% vs. UK/Western Europe. Easy to reach via Wrocław or Katowice airports.</p>
-          </div>
-          <div>
-            <h3>Services</h3>
-            <ul>
-              <li><a href="/dental-implants-poland">Dental Implants Poland</a></li>
-              <li><a href="/all-on-4-poland">All-on-4 Poland</a></li>
-              <li><a href="/dental-treatment-cost-poland">Costs & Prices</a></li>
-              <li><a href="/dental-tourism-poland">How it works</a></li>
-              <li><a href="/blog">Blog</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3>About</h3>
-            <ul>
-              <li><a href="/about-us">Marcin Nowosielski, M.Sc.</a></li>
-              <li><a href="https://mikrostomart.de" rel="noopener">Deutsch: mikrostomart.de</a></li>
-              <li><a href="https://mikrostomart.pl" rel="noopener">Polski: mikrostomart.pl</a></li>
-              <li><a href="https://nowosielski.pl" rel="noopener">nowosielski.pl</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3>Clinic & Contact</h3>
+            <h3 class="footer-subhead">Clinic & Contact</h3>
             <address>
               <strong>Mikrostomart</strong><br />
               {site.clinic.address.street}<br />
@@ -169,6 +148,23 @@ const xDefaultUrl = i18n.self === 'en' ? canonicalUrl : otherUrl;
             <p>
               <a class="btn-outline" href={`mailto:${site.clinic.email}`}>Send enquiry</a>
             </p>
+          </div>
+          <div class="footer-duo-col">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="/dental-implants-poland">Dental Implants Poland</a></li>
+              <li><a href="/all-on-4-poland">All-on-4 Poland</a></li>
+              <li><a href="/dental-treatment-cost-poland">Costs & Prices</a></li>
+              <li><a href="/dental-tourism-poland">How it works</a></li>
+              <li><a href="/blog">Blog</a></li>
+            </ul>
+            <h3 class="footer-subhead">About</h3>
+            <ul>
+              <li><a href="/about-us">Marcin Nowosielski, M.Sc.</a></li>
+              <li><a href="https://mikrostomart.de" rel="noopener">Deutsch: mikrostomart.de</a></li>
+              <li><a href="https://mikrostomart.pl" rel="noopener">Polski: mikrostomart.pl</a></li>
+              <li><a href="https://nowosielski.pl" rel="noopener">nowosielski.pl</a></li>
+            </ul>
           </div>
         </div>
 
@@ -261,6 +257,16 @@ const xDefaultUrl = i18n.self === 'en' ? canonicalUrl : otherUrl;
       .footer-grid ul li { margin-bottom: 0.5rem; font-size: 0.9375rem; }
       .footer-grid p { font-size: 0.9375rem; }
       .footer-grid address { font-style: normal; font-size: 0.9375rem; line-height: 1.7; }
+      .footer-duo {
+        display: grid;
+        gap: 3rem;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      }
+      .footer-subhead { margin-top: 1.75rem; }
+      .footer-duo ul { list-style: none; padding: 0; }
+      .footer-duo ul li { margin-bottom: 0.5rem; font-size: 0.9375rem; }
+      .footer-duo p { font-size: 0.9375rem; }
+      .footer-duo address { font-style: normal; font-size: 0.9375rem; line-height: 1.7; }
       .disclaimer { font-size: 0.8125rem; background: rgba(255,255,255,0.05); padding: 1rem; border-left: 3px solid var(--color-accent); margin: 1rem 0; }
       .copy { font-size: 0.75rem; color: #8aa49d; text-align: center; margin: 0; }
 
